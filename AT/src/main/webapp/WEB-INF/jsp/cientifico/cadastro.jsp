@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -12,13 +12,13 @@
 <c:import url="/WEB-INF/jsp/menu.jsp"/>
 
 <div class="container">
-    <h2>Cadastro de Livros Científicos</h2>
+    <h2>Cadastro de Livros CientÃ­ficos</h2>
     <form action="/cientifico/incluir" method="post">
 
         <div class="form-group">
-            <label>Título:</label>
-            <input type="text" value="Livro Cientifico" class="form-control"
-                   placeholder="Entre com o título" name="titulo">
+            <label>TÃ­tulo:</label>
+            <input type="text" value="Livro CientÃ­fico" class="form-control"
+                   placeholder="Entre com o tÃ­tulo" name="titulo">
         </div>
 
         <div class="form-group">

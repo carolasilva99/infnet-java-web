@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -16,9 +16,9 @@
     <form action="/literatura/incluir" method="post">
 
         <div class="form-group">
-            <label>T�tulo:</label>
-            <input type="text" value="Memorias Postumas de Bras Cubas" class="form-control"
-                   placeholder="Entre com o t�tulo" name="titulo">
+            <label>Título:</label>
+            <input type="text" value="Memórias Póstumas de Brás Cubas" class="form-control"
+                   placeholder="Entre com o título" name="titulo">
         </div>
 
         <div class="form-group">
@@ -38,14 +38,14 @@
         </div>
 
         <div class="form-group">
-            <label>G�nero:</label>
-            <input type="text" value="Romance" class="form-control" placeholder="Entre com o g�nero"
+            <label>Gênero:</label>
+            <input type="text" value="Romance" class="form-control" placeholder="Entre com o gênero"
                    name="genero">
         </div>
 
         <div class="form-group">
             <label>Idioma:</label>
-            <input type="text" value="Portugues" class="form-control" placeholder="Entre com o idioma" name="idioma">
+            <input type="text" value="Português" class="form-control" placeholder="Entre com o idioma" name="idioma">
         </div>
 
         <button type="submit" class="btn btn-default">Cadastrar</button>

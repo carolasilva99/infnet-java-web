@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -12,13 +12,13 @@
 <c:import url="/WEB-INF/jsp/menu.jsp"/>
 
 <div class="container">
-    <h2>Cadastro de Livros Did·ticos</h2>
+    <h2>Cadastro de Livros Did√°ticos</h2>
     <form action="/didatico/incluir" method="post">
 
         <div class="form-group">
-            <label>TÌtulo:</label>
-            <input type="text" value="Calculo 1" class="form-control"
-                   placeholder="Entre com o tÌtulo" name="titulo">
+            <label>T√≠tulo:</label>
+            <input type="text" value="C√°lculo 1" class="form-control"
+                   placeholder="Entre com o t√≠tulo" name="titulo">
         </div>
 
         <div class="form-group">
@@ -39,13 +39,13 @@
 
         <div class="form-group">
             <label>Disciplina:</label>
-            <input type="text" value="Calculo" class="form-control" placeholder="Entre com a disciplina"
+            <input type="text" value="C√°lculo" class="form-control" placeholder="Entre com a disciplina"
                    name="disciplina">
         </div>
 
         <div class="form-group">
-            <label>SÈrie:</label>
-            <input type="text" value="Faculdade" class="form-control" placeholder="Entre com a sÈrie" name="serie">
+            <label>S√©rie:</label>
+            <input type="text" value="Faculdade" class="form-control" placeholder="Entre com a s√©rie" name="serie">
         </div>
 
         <div class="form-group">

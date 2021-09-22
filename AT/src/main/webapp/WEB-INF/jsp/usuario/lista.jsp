@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="utf-8">
     <title>Java Web - AT</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
@@ -20,7 +20,7 @@
             </div>
         </c:if>
 
-        <h4>Quantidade de usuários existentes: ${lista.size()}!!!</h4>
+        <h4>Quantidade de usuÃ¡rios existentes: ${lista.size()}!!!</h4>
 
         <hr>
 
@@ -55,7 +55,7 @@
     </c:if>
 
     <c:if test="${empty lista}">
-        <h4>Não existem usuários cadastrados!!!</h4>
+        <h4>NÃ£o existem usuÃ¡rios cadastrados!!!</h4>
     </c:if>
 </div>
 </body>

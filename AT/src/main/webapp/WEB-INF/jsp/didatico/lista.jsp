@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="utf-8">
     <title>Java Web - AT</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
@@ -26,7 +26,7 @@
     </c:if>
 
     <c:if test="${not empty didaticos}">
-        <h4>Quantidade de livros didáticos existentes: ${didaticos.size()}!!!</h4>
+        <h4>Quantidade de livros didÃ¡ticos existentes: ${didaticos.size()}!!!</h4>
 
         <hr>
 
@@ -34,12 +34,12 @@
             <thead>
             <tr>
                 <th>Id</th>
-                <th>Título</th>
+                <th>TÃ­tulo</th>
                 <th>Autor</th>
                 <th>Valor do Aluguel</th>
                 <th>Usado</th>
                 <th>Disciplina</th>
-                <th>Série</th>
+                <th>SÃ©rie</th>
                 <th>Conservado</th>
                 <th></th>
             </tr>
@@ -63,7 +63,7 @@
     </c:if>
 
     <c:if test="${empty didaticos}">
-        <h4>Não existem livros didáticos cadastrados!</h4>
+        <h4>NÃ£o existem livros didÃ¡ticos cadastrados!</h4>
     </c:if>
 </div>
 </body>
