@@ -1,7 +1,7 @@
 package br.com.carolina.at.model.service;
 
 import br.com.carolina.at.clients.IEnderecoClient;
-import br.com.carolina.at.model.Endereco;
+import br.com.carolina.at.model.domain.Endereco;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

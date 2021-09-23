@@ -1,4 +1,6 @@
-package br.com.carolina.at.model.domain;
+package br.com.carolina.apiusuarios.model.domain;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.List;

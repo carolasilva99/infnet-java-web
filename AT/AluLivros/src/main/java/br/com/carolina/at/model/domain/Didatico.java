@@ -10,12 +10,8 @@ public class Didatico extends Livro {
     private String serie;
     private boolean conservado;
 
-    public Didatico(String titulo, String autor, float valorAluguel, boolean usado) {
-        super(titulo, autor, valorAluguel, usado);
-    }
-
     public Didatico() {
-
+        super("literatura");
     }
 
     @Override

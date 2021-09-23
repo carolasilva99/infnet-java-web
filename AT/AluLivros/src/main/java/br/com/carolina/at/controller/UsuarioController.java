@@ -1,6 +1,6 @@
 package br.com.carolina.at.controller;
 
-import br.com.carolina.at.model.Endereco;
+import br.com.carolina.at.model.domain.Endereco;
 import br.com.carolina.at.model.domain.Usuario;
 import br.com.carolina.at.model.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;

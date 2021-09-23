@@ -1,25 +1,11 @@
-package br.com.carolina.at.model.domain;
-
-import br.com.carolina.at.model.exceptions.DisciplinaNaoPreenchidaException;
-import br.com.carolina.at.model.exceptions.IdiomaNaoPreenchidoException;
-import br.com.carolina.at.model.exceptions.RamoNaoPreenchidoException;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
+package br.com.carolina.apiusuarios.model.domain;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@JsonTypeInfo(
-        use = JsonTypeInfo.Id.NAME,
-        include = JsonTypeInfo.As.PROPERTY,
-        property = "tipo")
-@JsonSubTypes({
-        @JsonSubTypes.Type(value = Literatura.class, name = "literatura"),
-        @JsonSubTypes.Type(value = Didatico.class, name = "didatico"),
-        @JsonSubTypes.Type(value = Cientifico.class, name = "cientifico"),
-})
-public abstract class Livro {
+public class Livro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -27,6 +13,7 @@ public abstract class Livro {
     private String autor;
     private float valorAluguel;
     private boolean usado;
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "idUsuario")
     private Usuario usuario;
@@ -39,10 +26,6 @@ public abstract class Livro {
         this.usado = usado;
     }
 
-    public Livro(String tipo) {
-        setTipo(tipo);
-    }
-
     public Livro() {
 
     }
@@ -50,21 +33,6 @@ public abstract class Livro {
     public float getValorAluguel() {
         return valorAluguel;
     }
-
-    public String obterLivro() throws DisciplinaNaoPreenchidaException, IdiomaNaoPreenchidoException, RamoNaoPreenchidoException {
-        StringBuilder stringBuilder = new StringBuilder();
-
-        stringBuilder.append(this.titulo);
-        stringBuilder.append(";");
-        stringBuilder.append(this.autor);
-        stringBuilder.append(";");
-        stringBuilder.append(this.calcularValorBruto());
-        stringBuilder.append("\r\n");
-
-        return stringBuilder.toString();
-    }
-
-    public abstract float calcularValorBruto() throws DisciplinaNaoPreenchidaException, IdiomaNaoPreenchidoException, RamoNaoPreenchidoException;
 
     public Integer getId() {
         return id;

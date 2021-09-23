@@ -8,14 +8,11 @@ import javax.persistence.Entity;
 public class Cientifico extends Livro {
     private String ramo;
     private int volumes;
+    private String tipo;
 
-
-    public Cientifico(String titulo, String autor, float valorAluguel, boolean usado) {
-        super(titulo, autor, valorAluguel, usado);
-    }
 
     public Cientifico() {
-        super();
+        super("cientifico");
     }
 
     @Override
@@ -58,5 +55,9 @@ public class Cientifico extends Livro {
 
     public int getVolumes() {
         return volumes;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

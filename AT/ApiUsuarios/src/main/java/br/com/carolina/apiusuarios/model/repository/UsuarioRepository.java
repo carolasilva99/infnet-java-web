@@ -1,6 +1,6 @@
-package br.com.carolina.at.model.repository;
+package br.com.carolina.apiusuarios.model.repository;
 
-import br.com.carolina.at.model.domain.Usuario;
+import br.com.carolina.apiusuarios.model.domain.Usuario;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

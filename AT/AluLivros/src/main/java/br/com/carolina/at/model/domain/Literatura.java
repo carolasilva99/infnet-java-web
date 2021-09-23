@@ -11,10 +11,11 @@ public class Literatura extends Livro {
 
     public Literatura(String titulo, String autor, float valorAluguel, boolean usado) {
         super(titulo, autor, valorAluguel, usado);
+        setTipo("literatura");
     }
 
     public Literatura() {
-
+        setTipo("literatura");
     }
 
     @Override

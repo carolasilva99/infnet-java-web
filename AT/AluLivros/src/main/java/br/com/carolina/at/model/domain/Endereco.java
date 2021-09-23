@@ -1,4 +1,4 @@
-package br.com.carolina.at.model;
+package br.com.carolina.at.model.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
